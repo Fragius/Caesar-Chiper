@@ -9,4 +9,4 @@ A Caesar-Cipher is an encryption technique performed by shifting each letter in 
   2. 
     Type your message, a space, then the number you want to shift by e.g.
     `Hello 5`
-    and press enter.
+    then press enter.
