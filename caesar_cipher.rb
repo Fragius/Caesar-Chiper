@@ -3,15 +3,8 @@ message = input[0]
 shift_value = input[1].to_i
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-def is_downcase?(letter)
-  letter == letter.downcase
-end
-
 def get_letter_index(letter, string)
-  unless is_downcase? letter
-    return string.upcase.index(letter)
-  end
-  string.index(letter)
+  string.index(letter.downcase)
 end
 
 def encrypt(message, shift_value, alphabet)
