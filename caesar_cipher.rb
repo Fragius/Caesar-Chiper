@@ -16,7 +16,7 @@ def get_letter_index(letter, string)
 end
 
 def shift_letter (letter_index, shift_value, string, is_downcase)
-    new_index = (string.length - (shift_value + letter_index)) * - 1
+    new_index = (shift_value + letter_index) % string.length
     unless is_downcase 
       return string[new_index].upcase
     end
